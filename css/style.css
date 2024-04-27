@@ -91,6 +91,10 @@ body {
     color: #f6fbff;
 }
 
+.header-menu a {
+    display: none;
+}
+
 .banner {
     width: 100%;
     margin: 40px 0;
@@ -185,7 +189,7 @@ body {
 .line-row {
     align-items: center;
     display: flex;
-    padding-bottom: 12px;
+    padding: 40px 0 12px 0;
 }
 
 .line-item {
@@ -224,7 +228,8 @@ body {
     padding-bottom: 37px;
 }
 
-.my-bio-row {
+.my-bio-row,
+.language-row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
@@ -247,7 +252,8 @@ body {
     padding: 0 14px 32px;
 }
 
-.about-row {
+.about-row,
+.partner-row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -350,6 +356,14 @@ body {
     width: 60%;
 }
 
+.javascript-line {
+    width: 85%;
+}
+
+.wordpress-line {
+    width: 90%;
+}
+
 .html-row {
     display: flex;
     justify-content: space-between;
@@ -365,7 +379,6 @@ body {
     color: #7d7789;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
-    font-weight: 500;
 }
 
 .html-inner {
@@ -378,7 +391,6 @@ body {
     color: #7d7789;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
-    font-weight: 500;
 }
 
 .meter {
@@ -394,10 +406,49 @@ body {
     background-color: #7d7789;
 }
 
-.partner-row {
+.Javascript-inner {
+    width: 85%;
+    height: 100%;
+    background-color: #7d7789;
+}
+
+.wordpress-inner {
+    width: 90%;
+    height: 100%;
+    background-color: #7d7789;
+}
+
+.language-block {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.language-inner {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 20%;
+    border: 3px solid #7d7789;
+    border-radius: 50%;
+}
+
+.language-inner-row {
     display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.language-circle {
+    text-align: center;
+}
+
+.language-inner span {
+    color: #7d7789;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
 }
 
 .partner-block {
@@ -462,31 +513,6 @@ body {
 
 .portfolio-line {
     width: 70%;
-    margin-right: 50px;
-}
-
-.portfolio-menu, .portfolio-wrap {
-    width: 100%;
-}
-
-.portfolio-menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0 0 12px;
-}
-
-.portfolio-menu li {
-    padding: 0 19px 11px 0;
-}
-
-.portfolio-menu ul li a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: #333;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
 }
 
 .portfolio-row {
@@ -652,6 +678,7 @@ body {
     font-weight: 400;
     color: #7d7789;
     display: block;
+    word-wrap: break-word;
 }
 
 .form-inner {
@@ -731,4 +758,322 @@ body {
     font-size: 18px;
     padding:0 12px 0 0;
     cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .banner {
+        margin: 10px 0;
+    }
+    .header-logo {
+        width: 30%;
+    }
+    .header-menu {
+        width: 70%;
+    }
+    .header-menu ul li .menu-item {
+        font-size: 13px;
+    }
+    .header-menu ul li .nav-link {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .inner h2 {
+        font-size: 38px;
+    }
+    .inner p {
+        font-size: 19px;
+    }
+    .get-btn a{
+        padding: 9px 19px;
+    }
+    .bio p,
+    .my-name p, 
+    .list-box ul li a, 
+    .html-item p, 
+    .html-inner p, 
+    .srvce-inner p,
+    .contact-wrap p,
+    .contact-wrap a{
+        font-size: 14px;
+    }
+    .list-box ul li a i {
+        font-size: 16px;
+    }
+    .about-block {
+        padding-bottom: 20px;
+    }
+    .testimonials-inner p {
+        font-size: 14px;
+        padding: 26px;
+    }
+    .language-inner {
+        width: 140px;
+        height: 140px;
+        left: 5%;
+    }
+    .portfolio-heading,
+    .portfolio-line {
+        width: 50%;
+    }
+    .srvce-inner {
+        padding: 20px 0;
+    }
+    .srvce-inner h3 {
+        font-size: 20px;
+    }
+    .form-item input,
+    .form-item textarea {
+        font-size: 14px;
+        padding: 13px;
+    }
+    .footer-icon {
+        width: 10%;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .line-item {
+        width: 30%;
+    }
+    .srvce-inner img {
+        padding: 0;
+    }
+    .srvce-inner {
+        padding: 15px 0;
+    }
+    .srvce-inner h3 {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .srvce-inner p {
+        font-size: 13px;
+        padding: 0 13px;
+    }
+    .contact-wrap {
+        padding: 10px 0;
+    }
+    .form-item{
+        margin: 10px 0 25px;
+    }
+    .form-item input {
+        height: 33px;
+        font-size: 13px;
+        padding: 7px;
+    }
+    .form-item textarea {
+        height: 88px;
+        font-size: 13px;
+        padding: 7px;
+    }
+    .map iframe {
+        height: 296px;
+    }
+    .get-btn a {
+        padding: 9px 11px;
+        font-size: 13px;
+    }
+    .footer-icon {
+        width: 13%;
+    }
+    .footer-icon p {
+        width: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .inner {
+        padding: 0 25px;
+    }
+    .inner h2 {
+        font-size: 30px;
+    }
+    .inner p {
+        font-size: 17px;
+    }
+    .line-row {
+        padding: 19px 0 12px 0;
+    }
+    .bio p,
+    .my-name p,
+    .html-item p,
+    .html-inner p,
+    .srvce-inner p {
+        font-size: 14px;
+    }
+    .language-inner {
+        left: 0;
+    }
+    .language-block {
+        width: 50%;
+        padding: 0 89px;
+    }
+    .partner-block,
+    .portfolio-block {
+        width: 50%;
+    }
+    .testimonials-inner p {
+        font-size: 14px;
+        padding: 17px 24px;
+        line-height: 23px;
+    }
+    .contact-wrap p {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+    }
+    .header-logo {
+        width: 95%;
+    }
+    .header-menu {
+        width: 5%;
+    }
+    .header-menu ul li {
+       display: none;
+    }
+    .header-menu a {
+        font-size: 20px;
+        color: #333;
+        display: block;
+    }
+    .about-bio,
+    .partner-block,
+    .portfolio-block,
+    .srvce-block,
+    .form-column {
+        width: 100%;
+    }
+    .language-block {
+        padding: 0 46px;
+    }
+    .my-name {
+        padding-left: 10px;
+    }
+    .programming-line {
+        margin: 0 66px;
+    }
+    .testimonials-block {
+        padding: 0 6px;
+    }
+    .testimonials-inner p {
+        padding: 17px;
+        line-height: 21px;
+    }
+    .srvce-inner p {
+        padding: 0 25px;
+    }
+    .contact-column {
+        width: 100%;
+        padding: 10px 15px;
+    }
+    .get-btn {
+        padding-bottom: 20px;
+    }
+    .footer-item {
+        width: 28%;
+    }
+    .footer-item p {
+        font-size: 14px;
+    }
+    .footer-icon {
+        width: 19%;
+    }
+    .footer-icon i {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479px) {
+    .inner h2 {
+        font-size: 24px;
+    }
+    .inner h2::before {
+        width: 52px;
+        height: 3px;
+    }
+    .inner p,
+    .line-item h3,
+    .html-item p {
+        font-size: 15px;
+        padding: 12px 0;
+    }
+    .srvce-inner p {
+        padding: 12px;
+    }
+    .get-btn {
+        padding-bottom: 30px;
+    }
+    .get-btn a {
+        padding: 6px;
+    }
+    .line-item,
+    .line {
+        width: 50%;
+    }
+    .line-item{
+        font-size: 15px;
+    }
+    .bio {
+        padding-left: 49px;
+    }
+    .bio p {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    .about-block {
+        padding: 22px 0;
+    }
+    .about-me {
+        width: 20%;
+    }
+    .my-bio {
+        width: 80%;
+    }
+    .my-name {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .my-name p {
+        font-size: 14px;
+        padding: 0 0 0 38px;
+    }
+    .programming-line {
+        margin: 0 38px;
+    }
+    .portfolio-heading h3 {
+        letter-spacing: 4px;
+    }
+    .language-inner {
+        width: 100px;
+        height: 100px;
+    }
+    .language-inner span {
+        font-size: 14px;
+    }
+    .testimonials-inner p {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .footer-item {
+        width: 34%;
+    }
+    .footer-icon {
+        width: 23%;
+    }
+    .footer-item p {
+        font-size: 13px;
+    }
 }
